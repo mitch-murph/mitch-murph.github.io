@@ -3,4 +3,5 @@ body {
   max-width: 600px;
   line-height: 1.4;
   font-size: 20px;
+  padding: 0 8px;
 }
