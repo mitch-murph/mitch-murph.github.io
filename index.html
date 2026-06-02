@@ -3,46 +3,216 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitch Murph</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Mitchell Murphy</title>
+    <meta name="description" content="Mitchell Murphy — software engineer based in Sydney building cloud-native systems for reliability, automation and observability.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <p>
-      Hello! I'm Mitchell, a software engineer working in financial tech.
-    </p>
-    <p>
-      I design and build cloud-native systems focused on reliability, automation and observability across frontend, backend, infrastructure and secure integrations.
-    </p>
-    <p>
-      In my free time, I enjoy hiking, camping, running and exploring new technologies. I'm always eager to learn and collaborate on interesting projects.
-    </p>
-    <p>
-      <a href="resume.pdf" target="_blank" rel="noopener">My resume</a>, if you're interested in that stuff.
-    </p>
-    <hr>
-    <p>
-      Some of my recent projects include
-    </p>
-    <p>
-      <a href="https://www.nswfuelprices.com.au/">NSW Fuel Prices</a>
-      <br>A data-driven programmatic SEO static-site generator that transforms live NSW fuel price APIs into thousands of search-optimised pages.
-    </p>
-    <p>
-      <a href="/khmer-alphabet">Khmer Alphabet</a>
-      <br>A language learning web app with interactive quizzes.
-    </p>
-    <p>
-      <a href="/super-retirement-planner">Super Retirement Planner</a>
-      <br>Financial simulation tool that models superannuation growth and retirement outcomes, with downloadable PDF report generation.
-    </p>
-    <p>
-      <a href="/stamp-duty-affordability-calculator">Stamp Duty Affordability Calculator</a>
-      <br>A property buying power calculator that factors in stamp duty, deposit, and upfront costs across six Australian states. Built with Claude Code and Claude Design.
-    </p>
-    <p>
-      <a href="/language-learning-tts-phrasebook">Language Learning Text-to-Speech Phrasebook</a>
-      <br>Type a phrase, hear it spoken at a slow "language teacher" pace, and save it to a searchable library with optional romanisation and English translation. Mobile and desktop friendly, with two visual themes and four playback modes.
-    </p>
+
+    <nav>
+      <div class="brand">
+        <span class="brand-mark">◆</span>
+        <span class="brand-name">Mitchell Murphy</span>
+      </div>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact" class="nav-cta">Get in touch</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="dot"></span>
+        Open to opportunities
+      </div>
+      <h1>
+        Software engineer building
+        <em>reliable systems at scale</em>
+        in Sydney.
+      </h1>
+      <p class="subhead">
+        I design and build cloud-native systems for reliability,
+        automation and observability, across frontend, backend
+        and infrastructure.
+      </p>
+      <div class="hero-ctas">
+        <a href="#work" class="cta-primary">See selected work →</a>
+        <a href="resume.pdf" target="_blank" rel="noopener" class="cta-secondary">Résumé (PDF)</a>
+      </div>
     </section>
+
+    <!-- Work -->
+    <div id="work" class="section-head">
+      <span class="section-num">02</span>
+      <span class="section-title">Selected work</span>
+      <hr>
+      <span class="section-meta">5 projects</span>
+    </div>
+
+    <section class="project-grid">
+
+      <a href="https://www.nswfuelprices.com.au/" class="project-card" target="_blank" rel="noopener">
+        <div class="project-thumb">
+          <video autoplay muted loop playsinline>
+            <source src="assets/videos/nsw-fuel-prices.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>NSW Fuel Prices</h3>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p>Uses GitHub Actions to pull NSW government fuel price data on a schedule and generate thousands of search-optimised pages across every suburb and fuel type.</p>
+          <div class="project-foot">
+            <span class="project-kind">Programmatic SEO</span>
+            <span class="project-tags">
+              <span>CloudFront</span>
+              <span>Route53</span>
+              <span>GitHub Actions</span>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/language-learning-tts-phrasebook" class="project-card">
+        <div class="project-thumb">
+          <video autoplay muted loop playsinline>
+            <source src="assets/videos/language-learning-tts-phrasebook.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Language Learning TTS Phrasebook</h3>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p>A phrasebook that reads your text aloud at a slow, deliberate pace using the Google Text-to-Speech API. Build a library of phrases with optional romanisation and translation.</p>
+          <div class="project-foot">
+            <span class="project-kind">Cloud app</span>
+            <span class="project-tags">
+              <span>AWS SAM</span>
+              <span>Lambda</span>
+              <span>DynamoDB</span>
+              <span>S3</span>
+              <span>Google TTS</span>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/super-retirement-planner" class="project-card">
+        <div class="project-thumb">
+          <video autoplay muted loop playsinline>
+            <source src="assets/videos/super-retirement-planner.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Super Retirement Planner</h3>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p>A financial calculator that projects superannuation growth and retirement savings, with downloadable PDF reports including vector-based charts.</p>
+          <div class="project-foot">
+            <span class="project-kind">Report Generator</span>
+            <span class="project-tags">
+              <span>React</span>
+              <span>PDF</span>
+              <span>Excel</span>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/stamp-duty-affordability-calculator" class="project-card">
+        <div class="project-thumb">
+          <video autoplay muted loop playsinline>
+            <source src="assets/videos/stamp-duty-affordability-calculator.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Stamp Duty Affordability Calculator</h3>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p>A property buying-power calculator that factors stamp duty, deposit, and upfront costs across six Australian states.</p>
+          <div class="project-foot">
+            <span class="project-kind">Calculator</span>
+            <span class="project-tags">
+              <span>React</span>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/khmer-alphabet" class="project-card">
+        <div class="project-thumb">
+          <video autoplay muted loop playsinline>
+            <source src="assets/videos/khmer-alphabet.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Khmer Alphabet</h3>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p>A language-learning app with interactive quizzes for memorising Khmer consonants and vowels.</p>
+          <div class="project-foot">
+            <span class="project-kind">Web app</span>
+            <span class="project-tags">
+              <span>React</span>
+            </span>
+          </div>
+        </div>
+      </a>
+
+    </section>
+
+    <!-- Stack -->
+    <div id="stack" class="section-head">
+      <span class="section-num">03</span>
+      <span class="section-title">Stack</span>
+      <hr>
+      <span class="section-meta">Tools &amp; tech</span>
+    </div>
+
+    <section class="stack-grid">
+      <div class="stack-cell">
+        <div class="stack-key">Languages &amp; Frameworks</div>
+        <div class="stack-val">TypeScript · React · Node.js · SQL Server · Apex · C · C++ · VB.NET · PowerShell</div>
+      </div>
+      <div class="stack-cell">
+        <div class="stack-key">DevOps &amp; CI/CD</div>
+        <div class="stack-val">GitHub Actions · Bitbucket Pipelines · Jenkins · Terraform</div>
+      </div>
+      <div class="stack-cell">
+        <div class="stack-key">Cloud (AWS)</div>
+        <div class="stack-val">CDK · CloudFormation · Lambda · API Gateway · S3 · CloudWatch · IAM · SES · CloudFront</div>
+      </div>
+      <div class="stack-cell">
+        <div class="stack-key">Platforms &amp; Tools</div>
+        <div class="stack-val">Auth0 · Splunk · Okta · Salesforce · Segment · Sentry · Mixpanel</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="foot-left">
+        <div class="foot-headline">Have something interesting in mind?</div>
+        <p>I'm always glad to talk reliability, infra, and weekend-project ideas.</p>
+      </div>
+      <div class="foot-right">
+        <a href="mailto:MitcMurph@gmail.com" class="foot-email">MitcMurph@gmail.com →</a>
+        <div class="foot-socials">
+          <a href="https://github.com/mitch-murph" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/mitchell-m-9b1806183/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
   </body>
 </html>
