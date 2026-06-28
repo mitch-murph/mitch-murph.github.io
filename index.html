@@ -1,218 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitchell Murphy</title>
-    <meta name="description" content="Mitchell Murphy — software engineer based in Sydney building cloud-native systems for reliability, automation and observability.">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitchell Murphy — Software Engineer</title>
+  <meta name="description" content="Mitchell Murphy — software engineer in Sydney building cloud-native systems for reliability, automation, and observability.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <nav>
-      <div class="brand">
-        <span class="brand-mark">◆</span>
-        <span class="brand-name">Mitchell Murphy</span>
-      </div>
-      <div class="nav-links">
-        <a href="#work">Work</a>
-        <a href="#stack">Stack</a>
-        <a href="#contact" class="nav-cta">Get in touch</a>
+  <!-- NAV -->
+  <header class="nav">
+    <nav class="nav__inner">
+      <a href="#top" class="nav__brand mono"><span class="nav__dot"></span>MURPHY_M</a>
+      <div class="nav__links mono">
+        <a href="#work">/work</a>
+        <a href="#stack">/stack</a>
+        <a href="#contact">/contact</a>
+        <a href="resume.pdf" target="_blank" rel="noopener" class="nav__resume">resume.pdf ↗</a>
       </div>
     </nav>
+  </header>
 
-    <!-- Hero -->
+  <main id="top">
+
+    <!-- HERO -->
     <section class="hero">
-      <div class="eyebrow">
-        <span class="dot"></span>
-        Open to opportunities
-      </div>
-      <h1>
-        Software engineer building
-        <em>reliable systems at scale</em>
-        in Sydney.
-      </h1>
-      <p class="subhead">
-        I design and build cloud-native systems for reliability,
-        automation and observability, across frontend, backend
-        and infrastructure.
-      </p>
-      <div class="hero-ctas">
-        <a href="#work" class="cta-primary">See selected work →</a>
-        <a href="resume.pdf" target="_blank" rel="noopener" class="cta-secondary">Résumé (PDF)</a>
+      <div class="wrap">
+        <p class="status mono"><span class="status__dot"></span>STATUS: OPEN TO OPPORTUNITIES</p>
+        <h1 class="hero__title">Systems built to <span class="accent">stay up</span> at scale.</h1>
+        <p class="hero__lede">I'm <strong>Mitchell Murphy</strong> — a software engineer in Sydney designing cloud-native systems for reliability, automation, and observability across frontend, backend, and infrastructure.</p>
+        <div class="hero__cta">
+          <a href="#work" class="btn btn--solid mono">SEE WORK →</a>
+          <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn--ghost mono">RÉSUMÉ (PDF) ↓</a>
+        </div>
       </div>
     </section>
 
-    <!-- Work -->
-    <div id="work" class="section-head">
-      <span class="section-num">02</span>
-      <span class="section-title">Selected work</span>
-      <hr>
-      <span class="section-meta">5 projects</span>
-    </div>
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow mono">01 / SELECTED WORK</p>
+          <span class="mono section__count">[ 05 PROJECTS ]</span>
+        </div>
+        <div class="cards">
 
-    <section class="project-grid">
+          <a href="https://www.nswfuelprices.com.au/" target="_blank" rel="noopener" class="card">
+            <div class="card__thumb"><video autoplay muted loop playsinline><source src="assets/videos/nsw-fuel-prices.mp4" type="video/mp4"></video><span class="mono card__arrow">↗</span></div>
+            <div class="card__body">
+              <span class="card__kind mono">PROGRAMMATIC SEO</span>
+              <h3 class="card__title">NSW Fuel Prices</h3>
+              <p class="card__desc">GitHub Actions pulls NSW government data on a schedule to generate thousands of SEO pages per suburb and fuel type.</p>
+              <div class="tags mono"><span>CloudFront</span><span>Route53</span><span>GitHub Actions</span></div>
+            </div>
+          </a>
 
-      <a href="https://www.nswfuelprices.com.au/" class="project-card" target="_blank" rel="noopener">
-        <div class="project-thumb">
-          <video autoplay muted loop playsinline>
-            <source src="assets/videos/nsw-fuel-prices.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="project-body">
-          <div class="project-top">
-            <h3>NSW Fuel Prices</h3>
-            <span class="project-arrow">↗</span>
-          </div>
-          <p>Uses GitHub Actions to pull NSW government fuel price data on a schedule and generate thousands of search-optimised pages across every suburb and fuel type.</p>
-          <div class="project-foot">
-            <span class="project-kind">Programmatic SEO</span>
-            <span class="project-tags">
-              <span>CloudFront</span>
-              <span>Route53</span>
-              <span>GitHub Actions</span>
-            </span>
-          </div>
-        </div>
-      </a>
+          <a href="/language-learning-tts-phrasebook" class="card">
+            <div class="card__thumb"><video autoplay muted loop playsinline><source src="assets/videos/language-learning-tts-phrasebook.mp4" type="video/mp4"></video><span class="mono card__arrow">↗</span></div>
+            <div class="card__body">
+              <span class="card__kind mono">CLOUD APP</span>
+              <h3 class="card__title">Language Learning TTS Phrasebook</h3>
+              <p class="card__desc">Reads text aloud with Google TTS and lets you build a phrase library with romanisation and translation.</p>
+              <div class="tags mono"><span>AWS SAM</span><span>Lambda</span><span>DynamoDB</span><span>S3</span><span>Google TTS</span></div>
+            </div>
+          </a>
 
-      <a href="/language-learning-tts-phrasebook" class="project-card">
-        <div class="project-thumb">
-          <video autoplay muted loop playsinline>
-            <source src="assets/videos/language-learning-tts-phrasebook.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="project-body">
-          <div class="project-top">
-            <h3>Language Learning TTS Phrasebook</h3>
-            <span class="project-arrow">↗</span>
-          </div>
-          <p>A phrasebook that reads your text aloud at a slow, deliberate pace using the Google Text-to-Speech API. Build a library of phrases with optional romanisation and translation.</p>
-          <div class="project-foot">
-            <span class="project-kind">Cloud app</span>
-            <span class="project-tags">
-              <span>AWS SAM</span>
-              <span>Lambda</span>
-              <span>DynamoDB</span>
-              <span>S3</span>
-              <span>Google TTS</span>
-            </span>
-          </div>
-        </div>
-      </a>
+          <a href="/super-retirement-planner" class="card">
+            <div class="card__thumb"><video autoplay muted loop playsinline><source src="assets/videos/super-retirement-planner.mp4" type="video/mp4"></video><span class="mono card__arrow">↗</span></div>
+            <div class="card__body">
+              <span class="card__kind mono">REPORT GENERATOR</span>
+              <h3 class="card__title">Super Retirement Planner</h3>
+              <p class="card__desc">Projects superannuation balances with downloadable PDF reports, including vector charts.</p>
+              <div class="tags mono"><span>React</span><span>PDF</span><span>Excel</span></div>
+            </div>
+          </a>
 
-      <a href="/super-retirement-planner" class="project-card">
-        <div class="project-thumb">
-          <video autoplay muted loop playsinline>
-            <source src="assets/videos/super-retirement-planner.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="project-body">
-          <div class="project-top">
-            <h3>Super Retirement Planner</h3>
-            <span class="project-arrow">↗</span>
-          </div>
-          <p>A financial calculator that projects superannuation growth and retirement savings, with downloadable PDF reports including vector-based charts.</p>
-          <div class="project-foot">
-            <span class="project-kind">Report Generator</span>
-            <span class="project-tags">
-              <span>React</span>
-              <span>PDF</span>
-              <span>Excel</span>
-            </span>
-          </div>
-        </div>
-      </a>
+          <a href="/stamp-duty-affordability-calculator" class="card">
+            <div class="card__thumb"><video autoplay muted loop playsinline><source src="assets/videos/stamp-duty-affordability-calculator.mp4" type="video/mp4"></video><span class="mono card__arrow">↗</span></div>
+            <div class="card__body">
+              <span class="card__kind mono">CALCULATOR</span>
+              <h3 class="card__title">Stamp Duty Affordability Calculator</h3>
+              <p class="card__desc">Property buying-power calculator across six Australian states.</p>
+              <div class="tags mono"><span>React</span></div>
+            </div>
+          </a>
 
-      <a href="/stamp-duty-affordability-calculator" class="project-card">
-        <div class="project-thumb">
-          <video autoplay muted loop playsinline>
-            <source src="assets/videos/stamp-duty-affordability-calculator.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="project-body">
-          <div class="project-top">
-            <h3>Stamp Duty Affordability Calculator</h3>
-            <span class="project-arrow">↗</span>
-          </div>
-          <p>A property buying-power calculator that factors stamp duty, deposit, and upfront costs across six Australian states.</p>
-          <div class="project-foot">
-            <span class="project-kind">Calculator</span>
-            <span class="project-tags">
-              <span>React</span>
-            </span>
-          </div>
-        </div>
-      </a>
+          <a href="/khmer-alphabet" class="card">
+            <div class="card__thumb"><video autoplay muted loop playsinline><source src="assets/videos/khmer-alphabet.mp4" type="video/mp4"></video><span class="mono card__arrow">↗</span></div>
+            <div class="card__body">
+              <span class="card__kind mono">WEB APP</span>
+              <h3 class="card__title">Khmer Alphabet</h3>
+              <p class="card__desc">Interactive quizzes for memorising Khmer consonants and vowels.</p>
+              <div class="tags mono"><span>React</span></div>
+            </div>
+          </a>
 
-      <a href="/khmer-alphabet" class="project-card">
-        <div class="project-thumb">
-          <video autoplay muted loop playsinline>
-            <source src="assets/videos/khmer-alphabet.mp4" type="video/mp4">
-          </video>
+          <a href="https://github.com/mitch-murph" target="_blank" rel="noopener" class="card card--more">
+            <span class="mono">more on github ↗</span>
+          </a>
+
         </div>
-        <div class="project-body">
-          <div class="project-top">
-            <h3>Khmer Alphabet</h3>
-            <span class="project-arrow">↗</span>
-          </div>
-          <p>A language-learning app with interactive quizzes for memorising Khmer consonants and vowels.</p>
-          <div class="project-foot">
-            <span class="project-kind">Web app</span>
-            <span class="project-tags">
-              <span>React</span>
-            </span>
-          </div>
-        </div>
-      </a>
-
-    </section>
-
-    <!-- Stack -->
-    <div id="stack" class="section-head">
-      <span class="section-num">03</span>
-      <span class="section-title">Stack</span>
-      <hr>
-      <span class="section-meta">Tools &amp; tech</span>
-    </div>
-
-    <section class="stack-grid">
-      <div class="stack-cell">
-        <div class="stack-key">Languages &amp; Frameworks</div>
-        <div class="stack-val">TypeScript · React · Node.js · SQL Server · Apex · C · C++ · VB.NET · PowerShell</div>
-      </div>
-      <div class="stack-cell">
-        <div class="stack-key">DevOps &amp; CI/CD</div>
-        <div class="stack-val">GitHub Actions · Bitbucket Pipelines · Jenkins · Terraform</div>
-      </div>
-      <div class="stack-cell">
-        <div class="stack-key">Cloud (AWS)</div>
-        <div class="stack-val">CDK · CloudFormation · Lambda · API Gateway · S3 · CloudWatch · IAM · SES · CloudFront</div>
-      </div>
-      <div class="stack-cell">
-        <div class="stack-key">Platforms &amp; Tools</div>
-        <div class="stack-val">Auth0 · Splunk · Okta · Salesforce · Segment · Sentry · Mixpanel</div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contact">
-      <div class="foot-left">
-        <div class="foot-headline">Have something interesting in mind?</div>
-        <p>I'm always glad to talk reliability, infra, and weekend-project ideas.</p>
-      </div>
-      <div class="foot-right">
-        <a href="mailto:MitcMurph@gmail.com" class="foot-email">MitcMurph@gmail.com →</a>
-        <div class="foot-socials">
-          <a href="https://github.com/mitch-murph" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/mitchell-m-9b1806183/" target="_blank" rel="noopener">LinkedIn</a>
+    <!-- STACK -->
+    <section id="stack" class="section">
+      <div class="wrap">
+        <p class="eyebrow mono section__solo">02 / STACK</p>
+        <div class="stack">
+          <div class="stack__group">
+            <p class="stack__label mono">LANGUAGES &amp; FRAMEWORKS</p>
+            <div class="chips mono"><span>TypeScript</span><span>React</span><span>Node.js</span><span>SQL Server</span><span>Apex</span><span>C</span><span>C++</span><span>VB.NET</span><span>PowerShell</span></div>
+          </div>
+          <div class="stack__group">
+            <p class="stack__label mono">DEVOPS &amp; CI/CD</p>
+            <div class="chips mono"><span>GitHub Actions</span><span>Bitbucket Pipelines</span><span>Jenkins</span><span>Terraform</span></div>
+          </div>
+          <div class="stack__group">
+            <p class="stack__label mono">CLOUD (AWS)</p>
+            <div class="chips mono"><span>CDK</span><span>CloudFormation</span><span>Lambda</span><span>API Gateway</span><span>S3</span><span>CloudWatch</span><span>IAM</span><span>SES</span><span>CloudFront</span></div>
+          </div>
+          <div class="stack__group">
+            <p class="stack__label mono">PLATFORMS &amp; TOOLS</p>
+            <div class="chips mono"><span>Auth0</span><span>Splunk</span><span>Okta</span><span>Salesforce</span><span>Segment</span><span>Sentry</span><span>Mixpanel</span></div>
+          </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-  </body>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <p class="eyebrow mono eyebrow--accent">03 / CONTACT</p>
+        <h2 class="contact__title">Let's build something that stays up.</h2>
+        <p class="contact__lede">I'm open to opportunities and always happy to talk shop. The fastest way to reach me is email.</p>
+        <div class="contact__rows">
+          <a href="mailto:MitcMurph@gmail.com" class="crow">
+            <span class="crow__val">MitcMurph@gmail.com</span>
+            <span class="crow__tag mono">EMAIL <span class="crow__arrow">→</span></span>
+          </a>
+          <a href="https://github.com/mitch-murph" target="_blank" rel="noopener" class="crow">
+            <span class="crow__val">github.com/mitch-murph</span>
+            <span class="crow__tag mono">GITHUB <span class="crow__arrow">↗</span></span>
+          </a>
+          <a href="https://www.linkedin.com/in/mitchell-m-9b1806183/" target="_blank" rel="noopener" class="crow">
+            <span class="crow__val">LinkedIn</span>
+            <span class="crow__tag mono">LINKEDIN <span class="crow__arrow">↗</span></span>
+          </a>
+        </div>
+        <div class="foot mono">
+          <span>MITCHELL MURPHY · SYDNEY</span>
+          <span>© 2026 · BUILT WITH PLAIN HTML/CSS</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
 </html>
